@@ -1,0 +1,162 @@
+:root {
+    --branco-principal: #FFFFFF;
+    --cinza-secundario: #C0C0C0;
+    --botao-azul: #1362c292;
+    --cor-de-fundo: #0e1221;
+    --botao-vermelho:#df73f486;
+    --botão-efeito-cor:#1ed35daa;
+}
+body {
+    background-color: var(--cor-de-fundo);
+    color: var(--branco-principal);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+.principal {
+    background-image: url("Castelo\ animado.gif");
+    background-repeat: no-repeat;
+    margin-top: 0em;
+    text-align: center;
+    min-height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.container__botao{
+    background-color: var(--botao-azul);
+    border-radius: 50px;
+    padding: 1em;
+    color: var(--branco-principal);
+    display: block;
+    text-align: center;
+    margin-bottom: 1em;
+    text-decoration: none;
+    border: 2px solid var(--branco-principal);
+}
+.container__botao-1{
+    background-color: var(--botao-vermelho);
+    border-radius: 50px;
+    padding: 1em;
+    color: var(--branco-principal);
+    display: block;
+    text-align: center;
+    margin-bottom: 1em;
+    text-decoration: none;
+    border: 2px solid var(--branco-principal);
+}
+
+.botao_secundario{
+    background-color: transparent;
+    border: 2px solid var(--branco-principal);   
+}
+
+.titulo{
+    text-align: center;
+    color: var(--branco-principal);
+    margin: 1em 0em 0em 0;
+    font-size: 55px;
+    font-family: 'Cambria, Cochin, Georgia, Times, Times New Roman, serif';
+    margin-left: 122%;
+    width: 86%;
+}
+
+.container__caixa{
+    margin: 0 8em;
+}
+.container__secundario{
+    width: 90%;
+    border-radius: 10%; 
+}
+.secundario{
+    margin: 5em;
+}
+.secundario__botao{
+    display: inline-block;
+    margin: 1em 1em;
+    background-color: var(--botao-rosa);
+}
+.secundario__imagem{
+    width: 90%;
+    border-radius: 10%;
+    margin-left: 10%;
+}
+.container__descricao{
+   margin: center;
+   text-align: center;
+   padding: 1em;
+}
+.temporada__lista{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+.container__botao:hover{
+    background-color: var(--botão-efeito-cor);
+
+}
+.container__botao-1:hover{
+    background-color: var(--botão-efeito-cor);
+}
+.lista__item{
+    margin:0 3em 1em 2em;
+}
+.personagens{
+    display: flex;
+    margin: 11em 17em;
+}
+
+.kodfun-galeri {
+    display: flex;
+    height: 20rem;
+    gap: 1rem
+}
+
+/* Estilos básicos do botão */
+.shine-button {
+    background-color: rgba(0, 255, 255, 0.641);
+    border: none;
+    color: rgb(5, 5, 5);
+    padding: 10px 10px;
+    font-size: 25px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0s ease;
+    margin: 2em 2em;
+}
+
+Button{
+    box-shadow: 0 0 5px cyan,
+    0 0 25px cyan;
+}
+
+button:hover{
+    box-shadow: 0 0 5px cyan, 0 0 25px cyan, 
+    0 0 50px cyan, 0 0 100px cyan, 0 0 200px cyan;
+}
+
+.kodfun-galeri{
+    display: flex;
+    height: 15rem;
+    gap: 1rem;
+}
+
+.kodfun-galeri > div{
+    flex: 1;
+    border-radius: 1rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 120%;
+    transition: all .8s cubic-bezier(.25, .4, .45, 1.4);
+}
+
+.kodfun-galeri > div:hover{
+    flex: 2;
+}
